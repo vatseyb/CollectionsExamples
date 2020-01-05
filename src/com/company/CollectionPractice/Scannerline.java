@@ -14,7 +14,7 @@ public class Scannerline {
         Scanner in = new Scanner(System.in);
         ArrayList<ArrayList<Integer>> inputs
                 = new ArrayList<ArrayList<Integer>>();
-        for (int i=0;i<5;i++) {
+        for (int i=0;i<2;i++) {
             // Prompt the user
             ArrayList<Integer> input1
                     = new ArrayList< >();
@@ -32,6 +32,7 @@ public class Scannerline {
         }
         // Display the input back to the user.
         System.out.println("input = " + inputs);
+        System.out.println(inputs.get(0).get(1));
 
 
     }
