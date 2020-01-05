@@ -9,10 +9,10 @@ Date: 1/2/2020
  */
 public class ArraylistExample {
 
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         //declared an ArrayList
-        Collection list1 = new ArrayList();
+        Collection<Integer> list1 = new ArrayList<>();
         //Add elements to the ArrayList
         list1.add(1);
         list1.add(2);
