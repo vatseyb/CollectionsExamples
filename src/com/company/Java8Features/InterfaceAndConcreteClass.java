@@ -6,31 +6,33 @@ import java.io.*;
 public class InterfaceAndConcreteClass {
 
 
-    class Rectangle implements Shape {
+    static class Rectangle implements Shape {
         double length;
         double breadth;
 
-        public double area() {
+        public double area(double length, double breadth) {
             double areaR = length * breadth;
             return areaR;
         }
     }
 
-    class Circle implements Shape {
+    static class Circle implements Shape {
         double radius;
 
-        public double area() {
-            double areaC = 3.14 * (Math.pow(radius, 2));
+        public double area(double pivalue ,double radius) {
+            double areaC = pivalue * (Math.pow(radius, 2));
             return areaC;
         }
     }
 
     public static void main(String args[]) {
         Rectangle objRectagle = new Rectangle();
-        double areaRectangle = objRectagle.area();
+        double areaRectangle = objRectagle.area(5,4);
+        System.out.println("Rectangle Area:" + areaRectangle);
 
         Circle objCircle = new Circle();
-        double areaCircle = objCircle.area();
+        double areaCircle = objCircle.area(3.14,5);
+        System.out.println("Circle Area:" + areaCircle);
 
     }
 }
