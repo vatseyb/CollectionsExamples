@@ -3,9 +3,14 @@ package com.company.Java8Features;
 import java.awt.*;
 import java.io.*;
 
+/*Purpose: Program to demonstrate the Interface and it's implementation
+Date: 01-07-2020
+Author: Bhuvi Vatsey
+ */
+
 public class InterfaceAndConcreteClass {
 
-
+//Rectangle class implements and declares the Interface Shape
     static class Rectangle implements Shape {
         double length;
         double breadth;
@@ -16,6 +21,7 @@ public class InterfaceAndConcreteClass {
         }
     }
 
+//Circle class implements and declares the Interface Shape
     static class Circle implements Shape {
         double radius;
 
